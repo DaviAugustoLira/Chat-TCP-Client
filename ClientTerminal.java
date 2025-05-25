@@ -47,7 +47,7 @@ public class ClientTerminal {
                 try {
                     String[] partes = texto.split(":", 3);
                     if(partes[0].equalsIgnoreCase("/privado") || partes[0].equalsIgnoreCase("/p")) {
-                        request = new Mensagem(null, partes[1], partes[2]);
+                        request = new Mensagem(null, partes[1], partes[0]+":"+partes[2]);
                     }else{
                         request = new Mensagem(null, null, partes[0]);
                     }
