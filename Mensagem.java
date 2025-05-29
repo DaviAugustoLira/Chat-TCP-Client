@@ -3,7 +3,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Mensagem implements Serializable {
-    private static final long serialVersionUID = 1L;
 
     private String remetente;
     private String destinatario; // null para broadcast
